@@ -1,0 +1,12 @@
+{
+    "name": "Houdini",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Adds Houdini support.",
+    "devtools_page": "devtools.html",
+    "permissions": [
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
