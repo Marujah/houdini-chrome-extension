@@ -1,3 +1,11 @@
+:root {
+    --bg-color: #f1f1f1;
+    --border-color: #d8d8d8;
+    --item-hover-color: #ececec;
+    --active-item-color: #fff;
+    --active-item-bg-color: #2196f3;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -17,5 +25,54 @@ body, html {
 #api-panel {
     width: 200px;
     height: 100%;
-    border-right: 1px solid #c3c3c3;
+    border-right: 1px solid var(--border-color);
+}
+
+.api-panel-headline {
+    margin: 0;
+    text-align: center;
+    background: var(--bg-color);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.api-names {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.api-names li {
+    padding: 1.5rem 0.5rem;
+    display: block;
+    position: relative;
+}
+
+.api-names li label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.api-names li input[type="radio"] {
+    display: none;
+}
+
+.api-names li label:hover {
+    background-color: var(--item-hover-color);
+}
+
+.api-names li input:checked ~ label{
+    color: var(--active-item-color);
+    background-color: var(--active-item-bg-color);
+}
+
+#api-data {
+    flex: 1;
 }

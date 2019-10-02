@@ -9,7 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <div id="api-panel"></div>
+        <div id="api-panel">
+            <h4 class="api-panel-headline">HOUDINI APIs</h4>
+            <ul class="api-names">
+                <li>
+                    <input id="propsNvalues_api" name="css_api" type="radio">
+                    <label for="propsNvalues_api">Props & Values</label>
+                </li>
+                <li>
+                    <input id="paint_api" name="css_api" type="radio">
+                    <label for="paint_api">Paint</label>
+                </li>
+                <li>
+                    <input id="layout_api" name="css_api" type="radio">
+                    <label for="layout_api">Layout</label>
+                </li>
+                <li>
+                    <input id="animation_api" name="css_api" type="radio">
+                    <label for="animation_api">Animation Worklet</label>
+                </li>
+            </ul>
+        </div>
+        <div id="api-data"></div>
     </div>
 </body>
 </html>
